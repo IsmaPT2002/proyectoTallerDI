@@ -198,7 +198,7 @@ class Informes:
 		doc.drawString(50, 770, "36208 Vigo - España")
 		doc.drawString(50, 760, "Teléfono: 986 986 986")
 		doc.drawString(50, 750, "a21arielcg@iesteis.es")
-		doc.drawImage("img/logo_fondo.png", 510, 750, 50, 50)
+		doc.drawImage("img/taller.png", 510, 750, 50, 50)
 		doc.line(30, 740, 570, 740)
 
 	@staticmethod

@@ -39,7 +39,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="pestana_clientes">
        <property name="acceptDrops">
@@ -72,6 +72,7 @@
           <property name="font">
            <font>
             <pointsize>11</pointsize>
+            <weight>75</weight>
             <bold>true</bold>
            </font>
           </property>
@@ -82,7 +83,7 @@
            <bool>false</bool>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(170,255,255)</string>
+           <string notr="true">background-color: rgb(176,221,255)</string>
           </property>
           <property name="text">
            <string>XESTIONAR CLIENTES</string>
@@ -93,7 +94,7 @@
          </widget>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,2,3,2,2,5,2,2,1">
+         <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,0,0,2,3,2,2,2,1">
           <item>
            <spacer name="horizontalSpacer_11">
             <property name="orientation">
@@ -106,6 +107,44 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblNombre">
+            <property name="minimumSize">
+             <size>
+              <width>110</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>110</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Nombre completo:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="txtNombre">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
           </item>
           <item>
            <widget class="QLabel" name="lblDni">
@@ -123,6 +162,7 @@
             </property>
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
@@ -138,12 +178,18 @@
            <widget class="QLineEdit" name="txtDni">
             <property name="minimumSize">
              <size>
-              <width>100</width>
+              <width>200</width>
               <height>20</height>
              </size>
             </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>16777215</height>
+             </size>
+            </property>
             <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 127)</string>
+             <string notr="true">background-color: rgb(248,239,162)</string>
             </property>
            </widget>
           </item>
@@ -164,6 +210,7 @@
             <property name="font">
              <font>
               <pointsize>10</pointsize>
+              <weight>50</weight>
               <bold>false</bold>
               <kerning>false</kerning>
              </font>
@@ -173,43 +220,6 @@
             </property>
             <property name="alignment">
              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLabel" name="lblNombre">
-            <property name="minimumSize">
-             <size>
-              <width>50</width>
-              <height>20</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>50</width>
-              <height>20</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="text">
-             <string>Nombre:</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="txtNombre">
-            <property name="minimumSize">
-             <size>
-              <width>200</width>
-              <height>20</height>
-             </size>
             </property>
            </widget>
           </item>
@@ -229,6 +239,7 @@
             </property>
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
@@ -310,11 +321,12 @@
             </property>
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Rúa e nº:</string>
+             <string>Dirección: </string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -347,11 +359,12 @@
             </property>
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Provincia</string>
+             <string>Provincia: </string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -384,11 +397,12 @@
             </property>
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Municipio</string>
+             <string>Municipio: </string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -421,7 +435,7 @@
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="1,2,2,2,2,5">
+         <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="0,2,2,2,2,0">
           <property name="spacing">
            <number>25</number>
           </property>
@@ -438,7 +452,7 @@
             </property>
             <property name="sizeHint" stdset="0">
              <size>
-              <width>20</width>
+              <width>333</width>
               <height>20</height>
              </size>
             </property>
@@ -460,6 +474,7 @@
             </property>
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
@@ -546,6 +561,7 @@
           <property name="font">
            <font>
             <pointsize>11</pointsize>
+            <weight>75</weight>
             <bold>true</bold>
            </font>
           </property>
@@ -556,7 +572,7 @@
            <bool>false</bool>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(170,255,255)</string>
+           <string notr="true">background-color: rgb(176,221,255)</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::NoFrame</enum>
@@ -600,11 +616,12 @@
             </property>
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Matrícula</string>
+             <string>Matrícula: </string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -623,7 +640,7 @@
              <bool>false</bool>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 127)</string>
+             <string notr="true">background-color: rgb(248,239,162)</string>
             </property>
            </widget>
           </item>
@@ -643,11 +660,12 @@
             </property>
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Marca</string>
+             <string>Marca: </string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -680,11 +698,12 @@
             </property>
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Modelo</string>
+             <string>Modelo: </string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -714,94 +733,10 @@
             </property>
            </spacer>
           </item>
-          <item>
-           <widget class="QPushButton" name="btnNuevoCoche">
-            <property name="enabled">
-             <bool>false</bool>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>24</width>
-              <height>24</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>24</width>
-              <height>24</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string>Añadir un nuevo coche al cliente</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>../img/plus.png</normaloff>../img/plus.png</iconset>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="btnBusCar">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>24</width>
-              <height>24</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>24</width>
-              <height>24</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string>Buscar por matrícula</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>../img/buscar.png</normaloff>../img/buscar.png</iconset>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="buttonLimpiarVehiculo">
-            <property name="minimumSize">
-             <size>
-              <width>24</width>
-              <height>24</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>24</width>
-              <height>24</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string>Limpiar formulario</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>../img/limpiar.png</normaloff>../img/limpiar.png</iconset>
-            </property>
-           </widget>
-          </item>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="2,1,1,1,1,2">
+         <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="2,0,0,1,1,1,1,2">
           <property name="leftMargin">
            <number>0</number>
           </property>
@@ -810,6 +745,32 @@
           </property>
           <item>
            <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Tipo de Combustible: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_21">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -888,6 +849,13 @@
            <number>0</number>
           </property>
           <item>
+           <widget class="QCheckBox" name="checkMostrarHistorico">
+            <property name="text">
+             <string>Mostrar histórico</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <spacer name="horizontalSpacer_3">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -928,9 +896,86 @@
            </spacer>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkMostrarHistorico">
+           <widget class="QPushButton" name="btnNuevoCoche">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Añadir un nuevo coche al cliente</string>
+            </property>
             <property name="text">
-             <string>Mostrar histórico</string>
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../img/mas.png</normaloff>../img/mas.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnBusCar">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Buscar por matrícula</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../img/buscar.png</normaloff>../img/buscar.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="buttonLimpiarVehiculo">
+            <property name="minimumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Limpiar formulario</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../img/limpiar.png</normaloff>../img/limpiar.png</iconset>
             </property>
            </widget>
           </item>
@@ -1016,11 +1061,12 @@
           <property name="font">
            <font>
             <pointsize>11</pointsize>
+            <weight>75</weight>
             <bold>true</bold>
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(170,255,255)</string>
+           <string notr="true">background-color: rgb(150,235,217)</string>
           </property>
           <property name="text">
            <string>XESTIONAR SERVIZOS</string>
@@ -1031,7 +1077,7 @@
          </widget>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1,3,1,3,1,2,1,0,0">
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1,3,1,3,1,2,1">
           <item>
            <spacer name="horizontalSpacer_13">
             <property name="orientation">
@@ -1049,11 +1095,12 @@
            <widget class="QLabel" name="labelSId">
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>ID</string>
+             <string>ID: </string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1065,6 +1112,18 @@
             <property name="enabled">
              <bool>false</bool>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>20</height>
+             </size>
+            </property>
             <property name="text">
              <string>NUEVO</string>
             </property>
@@ -1075,13 +1134,26 @@
           </item>
           <item>
            <widget class="QLabel" name="labelNombreProducto">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>20</height>
+             </size>
+            </property>
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Nombre</string>
+             <string>Nombre: </string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1089,17 +1161,43 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="textNombreServicio"/>
+           <widget class="QLineEdit" name="textNombreServicio">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
           </item>
           <item>
            <widget class="QLabel" name="labelPrecioUnitario">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
             <property name="font">
              <font>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Precio unitario</string>
+             <string>Precio unitario: </string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1108,14 +1206,23 @@
           </item>
           <item>
            <widget class="QDoubleSpinBox" name="textPrecioUnitario">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>20</height>
+             </size>
+            </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
             </property>
             <property name="maximum">
              <double>50000.000000000000000</double>
-            </property>
-            <property name="stepType">
-             <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
             </property>
            </widget>
           </item>
@@ -1132,28 +1239,6 @@
             </property>
            </spacer>
           </item>
-          <item>
-           <widget class="QPushButton" name="btnBuscarServicio">
-            <property name="text">
-             <string/>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>../img/buscar.png</normaloff>../img/buscar.png</iconset>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="btnLimpiarServicio">
-            <property name="text">
-             <string notr="true"/>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>../img/limpiar.png</normaloff>../img/limpiar.png</iconset>
-            </property>
-           </widget>
-          </item>
          </layout>
         </item>
         <item>
@@ -1161,6 +1246,13 @@
           <property name="topMargin">
            <number>30</number>
           </property>
+          <item>
+           <widget class="QCheckBox" name="checkHistoricoServicios">
+            <property name="text">
+             <string>Histórico</string>
+            </property>
+           </widget>
+          </item>
           <item>
            <spacer name="horizontalSpacer_15">
             <property name="orientation">
@@ -1202,9 +1294,24 @@
            </spacer>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkHistoricoServicios">
+           <widget class="QPushButton" name="btnBuscarServicio">
             <property name="text">
-             <string>Histórico</string>
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../img/buscar.png</normaloff>../img/buscar.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnLimpiarServicio">
+            <property name="text">
+             <string notr="true"/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../img/limpiar.png</normaloff>../img/limpiar.png</iconset>
             </property>
            </widget>
           </item>
@@ -1285,11 +1392,12 @@
             <property name="font">
              <font>
               <pointsize>11</pointsize>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: rgb(170,255,255)</string>
+             <string notr="true">background-color: rgb(255,181,195)</string>
             </property>
             <property name="text">
              <string>XESTIONAR FACTURACIÓN</string>
@@ -1300,7 +1408,7 @@
            </widget>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,3">
+           <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,0">
             <property name="spacing">
              <number>20</number>
             </property>
@@ -1334,7 +1442,7 @@
              </widget>
             </item>
             <item>
-             <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,1,20,1">
+             <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,1,0,20,1">
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,2,1,5,1,5,0,3">
                 <property name="spacing">
@@ -1344,11 +1452,12 @@
                  <widget class="QLabel" name="lblFactId">
                   <property name="font">
                    <font>
+                    <weight>75</weight>
                     <bold>true</bold>
                    </font>
                   </property>
                   <property name="text">
-                   <string>ID</string>
+                   <string>ID: </string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1363,6 +1472,18 @@
                   <property name="enabled">
                    <bool>false</bool>
                   </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>50</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>20</height>
+                   </size>
+                  </property>
                   <property name="text">
                    <string>NUEVO</string>
                   </property>
@@ -1372,11 +1493,12 @@
                  <widget class="QLabel" name="lblFactCli">
                   <property name="font">
                    <font>
+                    <weight>75</weight>
                     <bold>true</bold>
                    </font>
                   </property>
                   <property name="text">
-                   <string>Cliente</string>
+                   <string>Cliente: </string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1388,6 +1510,18 @@
                 </item>
                 <item>
                  <widget class="QComboBox" name="cmbFactCli">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>20</height>
+                   </size>
+                  </property>
                   <property name="sizeAdjustPolicy">
                    <enum>QComboBox::AdjustToContents</enum>
                   </property>
@@ -1397,11 +1531,12 @@
                  <widget class="QLabel" name="lblFactCar">
                   <property name="font">
                    <font>
+                    <weight>75</weight>
                     <bold>true</bold>
                    </font>
                   </property>
                   <property name="text">
-                   <string>Vehículo</string>
+                   <string>Vehículo: </string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1412,17 +1547,31 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QComboBox" name="cmbFactCar"/>
+                 <widget class="QComboBox" name="cmbFactCar">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </widget>
                 </item>
                 <item>
                  <widget class="QLabel" name="lblFactFecha">
                   <property name="font">
                    <font>
+                    <weight>75</weight>
                     <bold>true</bold>
                    </font>
                   </property>
                   <property name="text">
-                   <string>Fecha</string>
+                   <string>Fecha: </string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1434,6 +1583,18 @@
                 </item>
                 <item>
                  <widget class="QDateEdit" name="txtFechaFactura">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>20</height>
+                   </size>
+                  </property>
                   <property name="calendarPopup">
                    <bool>true</bool>
                   </property>
@@ -1443,6 +1604,38 @@
               </item>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <item>
+                 <widget class="QPushButton" name="btnGuardarFactura">
+                  <property name="minimumSize">
+                   <size>
+                    <width>80</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>80</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Guardar</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_17">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
                 <item>
                  <widget class="QPushButton" name="btnBuscaFact">
                   <property name="sizePolicy">
@@ -1469,33 +1662,6 @@
                   <property name="icon">
                    <iconset>
                     <normaloff>../img/buscar.png</normaloff>../img/buscar.png</iconset>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer_17">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>40</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="chkFormalizarFactura">
-                  <property name="text">
-                   <string>Formalizar</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="btnGuardarFactura">
-                  <property name="text">
-                   <string>Guardar</string>
                   </property>
                  </widget>
                 </item>
@@ -1546,6 +1712,25 @@
                  </widget>
                 </item>
                </layout>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="chkFormalizarFactura">
+                <property name="minimumSize">
+                 <size>
+                  <width>80</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Formalizar</string>
+                </property>
+               </widget>
               </item>
               <item>
                <widget class="QTableWidget" name="tablaFacturaServicios">
@@ -1629,6 +1814,7 @@
                      <widget class="QLabel" name="label_3">
                       <property name="font">
                        <font>
+                        <weight>50</weight>
                         <bold>false</bold>
                        </font>
                       </property>
@@ -1644,6 +1830,7 @@
                      <widget class="QLabel" name="lblSubtotal">
                       <property name="font">
                        <font>
+                        <weight>75</weight>
                         <bold>true</bold>
                        </font>
                       </property>
@@ -1694,6 +1881,7 @@
                      <widget class="QLabel" name="lblSubtotalIva">
                       <property name="font">
                        <font>
+                        <weight>75</weight>
                         <bold>true</bold>
                        </font>
                       </property>
@@ -1740,6 +1928,7 @@
                      <widget class="QLabel" name="label_4">
                       <property name="font">
                        <font>
+                        <weight>75</weight>
                         <bold>true</bold>
                        </font>
                       </property>
@@ -1752,6 +1941,7 @@
                      <widget class="QLabel" name="lblSubtotalTotal">
                       <property name="font">
                        <font>
+                        <weight>75</weight>
                         <bold>true</bold>
                        </font>
                       </property>
@@ -1784,7 +1974,7 @@
      <x>0</x>
      <y>0</y>
      <width>1200</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivo">
@@ -1860,7 +2050,7 @@
   <action name="actionHacerCopia">
    <property name="icon">
     <iconset>
-     <normaloff>../img/hacer-copia-seguridad.png</normaloff>../img/hacer-copia-seguridad.png</iconset>
+     <normaloff>../img/crear-backup.png</normaloff>../img/crear-backup.png</iconset>
    </property>
    <property name="text">
     <string>Crear copia de seguridad</string>
@@ -1869,18 +2059,26 @@
   <action name="actionRestaurarCopia">
    <property name="icon">
     <iconset>
-     <normaloff>../img/restaurar-copia-seguridad.png</normaloff>../img/restaurar-copia-seguridad.png</iconset>
+     <normaloff>../img/restaurar-backup.png</normaloff>../img/restaurar-backup.png</iconset>
    </property>
    <property name="text">
     <string>Restaurar copia de seguridad</string>
    </property>
   </action>
   <action name="actionExportarExcel">
+   <property name="icon">
+    <iconset>
+     <normaloff>../img/exportar-excel.png</normaloff>../img/exportar-excel.png</iconset>
+   </property>
    <property name="text">
     <string>Exportar Excel</string>
    </property>
   </action>
   <action name="actionImportarExcel">
+   <property name="icon">
+    <iconset>
+     <normaloff>../img/importar-excel.png</normaloff>../img/importar-excel.png</iconset>
+   </property>
    <property name="text">
     <string>Importar Excel</string>
    </property>
@@ -1888,7 +2086,7 @@
   <action name="actionCambiarPropietario">
    <property name="icon">
     <iconset>
-     <normaloff>../img/duenho.png</normaloff>../img/duenho.png</iconset>
+     <normaloff>../img/cambiar-propietario.png</normaloff>../img/cambiar-propietario.png</iconset>
    </property>
    <property name="text">
     <string>Cambiar propietario</string>
@@ -1897,18 +2095,26 @@
   <action name="actionBajaCliente">
    <property name="icon">
     <iconset>
-     <normaloff>../img/borrar-cliente.png</normaloff>../img/borrar-cliente.png</iconset>
+     <normaloff>../img/eliminar-cliente.png</normaloff>../img/eliminar-cliente.png</iconset>
    </property>
    <property name="text">
     <string>Dar de baja cliente</string>
    </property>
   </action>
   <action name="actionInformeClientes">
+   <property name="icon">
+    <iconset>
+     <normaloff>../img/clientes.png</normaloff>../img/clientes.png</iconset>
+   </property>
    <property name="text">
     <string>Listado de clientes</string>
    </property>
   </action>
   <action name="actionInformeVehiculos">
+   <property name="icon">
+    <iconset>
+     <normaloff>../img/coches.png</normaloff>../img/coches.png</iconset>
+   </property>
    <property name="text">
     <string>Listado de vehículos</string>
    </property>

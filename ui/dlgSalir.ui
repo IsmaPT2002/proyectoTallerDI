@@ -30,8 +30,8 @@
     <rect>
      <x>10</x>
      <y>90</y>
-     <width>251</width>
-     <height>21</height>
+     <width>271</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="font">
@@ -61,7 +61,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../img/peligro.png</pixmap>
+    <pixmap>../img/advertencia.PNG</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
