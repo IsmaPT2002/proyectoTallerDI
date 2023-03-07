@@ -158,7 +158,7 @@ class Informes:
 				doc.drawString(50, h, f"{i}")
 				doc.drawString(100, h, serv[0].nombre)
 				doc.drawString(250, h, f"{serv[0].precio_unitario:.2f}".rjust(10))
-				doc.drawString(390, h, f"{serv[1]:.2f}".rjust(5))
+				doc.drawString(355, h, f"{serv[1]}".rjust(10))
 				doc.drawString(500, h, f"{serv[0].precio_unitario * serv[1]:.2f} €".rjust(10))
 
 				h -= 15
@@ -197,7 +197,7 @@ class Informes:
 		doc.drawString(50, 780, "Avenida de Galicia, 101")
 		doc.drawString(50, 770, "36208 Vigo - España")
 		doc.drawString(50, 760, "Teléfono: 986 986 986")
-		doc.drawString(50, 750, "a21arielcg@iesteis.es")
+		doc.drawString(50, 750, "a22ismaelpt@iesteis.es")
 		doc.drawImage("img/logo.png", 450, 750, width=100, height=60)
 		doc.line(30, 740, 570, 740)
 

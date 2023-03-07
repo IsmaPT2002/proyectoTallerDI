@@ -93,6 +93,9 @@ class Main(QtWidgets.QMainWindow):
 		from .main import tabclientes
 		tabclientes.init_tab(self)
 
+		from .main import tabvehiculos
+		tabvehiculos.init_tab(self)
+
 	def on_item_seleccionado(self, item: QtWidgets.QTableWidgetItem):
 		if item is not None:
 			dni = self.ventMain.tablaClientes.item(item.row(), 0)
