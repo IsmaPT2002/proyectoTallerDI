@@ -1,0 +1,6 @@
+**/__pycache__/**
+bbdd.sqlite
+ui/*.py
+docs/
+build
+dist
