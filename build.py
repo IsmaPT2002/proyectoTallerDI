@@ -1,6 +1,6 @@
 """
 Script para limpiar caché del proyecto y compilar los archivos .ui a .py (PyQt6)
-Escrito por Ariel Costas
+Escrito por Ismael Pérez Tierra
 Cedido al dominio público
 """
 

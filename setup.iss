@@ -3,8 +3,8 @@
 
 #define MyAppName "Talleres de Teis"
 #define MyAppVersion "1.0"
-#define MyAppPublisher "Ariel Costas Guerrero"
-#define MyAppURL "https://costas.dev"
+#define MyAppPublisher "Ismael Pérez Tierra"
+#define MyAppURL "https://"
 #define MyAppExeName "main.exe"
 
 [Setup]
@@ -20,13 +20,13 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\TalleresTeis
 DisableProgramGroupPage=yes
-LicenseFile=C:\Users\a21arielcg\PycharmProjects\costasguerrero\LICENCE
-InfoBeforeFile=C:\Users\a21arielcg\PycharmProjects\costasguerrero\README.md
+LicenseFile=C:\Users\a22ismaelpt\PycharmProjects\proyectoTallerDI\LICENCE
+InfoBeforeFile=C:\Users\a22ismaelpt\PycharmProjects\proyectoTallerDI\README.md
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
-OutputDir=C:\Users\a21arielcg\Desktop
+OutputDir=C:\Users\a22ismaelpt\Desktop
 OutputBaseFilename=mysetup
-SetupIconFile=C:\Users\a21arielcg\PycharmProjects\costasguerrero\img\logo.ico
+SetupIconFile=C:\Users\a22ismaelpt\PycharmProjects\proyectoTallerDI\img\logo.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -40,7 +40,7 @@ Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\a21arielcg\PycharmProjects\costasguerrero\dist\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\a22ismaelpt\PycharmProjects\proyectoTallerDI\dist\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
